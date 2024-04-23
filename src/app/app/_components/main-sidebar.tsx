@@ -11,7 +11,7 @@ import {
   DashboardSidebarNavHeaderTitle,
   DashboardSidebarFooter,
 } from "@/components/dashboard/sidebar";
-import { HomeIcon, MixerVerticalIcon } from "@radix-ui/react-icons";
+import { HomeIcon, MixerVerticalIcon, BarChartIcon } from "@radix-ui/react-icons";
 import { usePathname, useRouter } from "next/navigation";
 import { UserDropdown } from "./user-dropdown";
 import { Session } from "next-auth";
@@ -33,7 +33,6 @@ export function MainSidebar({ user }: MainSidebarProps) {
       <DashboardSidebarHeader>
       <Logo/>
       </DashboardSidebarHeader>
-
       <DashboardSidebarMain className="flex flex-col flex-grow">
         <DashboardSidebarNav>
           <DashboardSidebarNavMain>

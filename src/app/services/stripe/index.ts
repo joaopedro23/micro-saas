@@ -159,6 +159,7 @@ export const getPlanByPrice = (priceId: string) => {
 }
 
 export const getUserCurrentPlan = async (userId: string) => {
+    
 const user = await prisma.user.findUnique({
     where: {
     id: userId,
